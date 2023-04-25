@@ -2,10 +2,13 @@ import { Checkbox, IconButton } from '@mui/material'
 import React from 'react'
 import StarIcon from '@mui/icons-material/Star';
 import LabelImportantIcon from '@mui/icons-material/LabelImportant';
+import { useNavigate } from 'react-router-dom';
 
 export default function EmailRow({id, title, subject, description, time}) {
+  const navigate = useNavigate()
+
   return (
-    <div className='email-row'>
+    <div className='email-row' onClick={() => navigate("/mail")}>
       <div className="email-row__options">
       <Checkbox/>
       <IconButton>
@@ -29,7 +32,6 @@ export default function EmailRow({id, title, subject, description, time}) {
       <p className="email-row__time">
         {time}
       </p>
-
     </div>
   )
 }
