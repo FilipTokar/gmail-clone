@@ -18,20 +18,22 @@ export default function Header() {
       </div>
       <div className="header__middle">
         <SearchIcon/>
-        <input type="text" />
+        <input type="text" placeholder='Search in mail' />
         <TuneIcon/>
 
       </div>
       <div className="header__right">
-        <IconButton>
-            <HelpOutlineIcon/>
-        </IconButton>
-        <IconButton>
-            <SettingsIcon/>
-        </IconButton>
-        <IconButton>
-            <AppsIcon/>
-        </IconButton>
+        <div className="header__right--buttons">
+            <IconButton>
+                <HelpOutlineIcon/>
+            </IconButton>
+            <IconButton>
+                <SettingsIcon/>
+            </IconButton>
+            <IconButton>
+                <AppsIcon/>
+            </IconButton>
+        </div>
         <Avatar/>
       </div>
     </div>
