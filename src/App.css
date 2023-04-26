@@ -196,3 +196,39 @@ box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.5);
   padding: 8px;
   border-top-left-radius: 10px;
 }
+
+.email__body {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 100vh;
+}
+
+.email__header {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  position: relative;
+
+}
+
+.email__header h2 {
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.email__header p {
+  margin: 0 12px 0 12px;
+}
+
+.email__message {
+  padding-top: 20px;
+  word-break: break-all;
+}
+
+.email__header-time {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  color: grey;
+}

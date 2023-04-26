@@ -13,6 +13,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { useNavigate } from 'react-router-dom';
+import LabelImportantIcon from '@mui/icons-material/LabelImportant';
 
 export default function Email() {
   const navigate = useNavigate()
@@ -59,6 +60,17 @@ export default function Email() {
           <IconButton>
             <ChevronRightIcon/>
           </IconButton>
+        </div>
+      </div>
+      <div className="email__body">
+        <div className="email__header">
+          <h2>Subject</h2>
+          <LabelImportantIcon/>
+          <p>Title</p>
+          <p className='email__header-time'>10:00</p>
+        </div>
+        <div className="email__message">
+          This is message.
         </div>
       </div>
     </div>
