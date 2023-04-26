@@ -5,8 +5,12 @@ import Sidebar from './components/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import EmailList from "./components/EmailList"
 import Email from './components/Email'
+import SendEmail from './components/SendEmail';
+import { useSelector } from 'react-redux';
+import { selectSendMessageIsOpen } from './features/mailSlice';
 
 function App() {
+  const sendMessageIsOpen = useSelector(selectSendMessageIsOpen)
   return (
     <div className="App">
       <Router>
@@ -17,7 +21,8 @@ function App() {
               <Route path='/' element={<EmailList/>}/>
               <Route path='/mail' element={<Email/>}/>
             </Routes>
-        </div>  
+        </div>
+        {sendMessageIsOpen && <SendEmail/>}  
       </Router>
     </div>
   );

@@ -9,15 +9,21 @@ import LabelImportantIcon from '@mui/icons-material/LabelImportant';
 import SendIcon from '@mui/icons-material/Send';
 import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useDispatch } from 'react-redux';
+import { openSendMessage } from '../features/mailSlice';
 
 
 
 export default function Sidebar() {
+  const dispatch = useDispatch()
+
   return (
     <div className='sidebar'>
       <Button 
       className='sidebar__new-message' 
-      startIcon={<CreateIcon fontSize='large'/>}>
+      startIcon={<CreateIcon fontSize='large'/>}
+      onClick={() => {dispatch(openSendMessage())}}
+      >
         New message
       </Button>
       <SidebarOption Icon={InboxIcon} title="Inbox" number={54} selected={true}/>
