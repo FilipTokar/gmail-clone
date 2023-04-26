@@ -4,16 +4,30 @@ import { Button } from '@mui/material';
 import {useForm} from 'react-hook-form'
 import { useDispatch } from 'react-redux';
 import { closeSendMessage } from '../features/mailSlice';
+import  { db }  from '../features/firebase';
+import firebase from 'firebase/compat/app'
+import 'firebase/firestore'
+import { collection, addDoc } from "firebase/firestore"; 
 
 export default function SendEmail() {
     const {register, handleSubmit, watch, formState: {errors} } = useForm()
 
     const dispatch = useDispatch()
 
-    const onSubmit = (formData) => {
-        console.log(formData)
-    }
+    // this function works. need to get data from the form to pass in it
+    async function onSubmit(formData) {
+        const data = formData
+        console.log(data)
+        await addDoc(collection(db, "emails"), {
+            to: data.to,
+            subject: data.subject,
+            message: data.message,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        })
 
+        dispatch(closeSendMessage())
+    }
+    
   return (
     <div className='send-mail'>
         <div className="send-mail__header">
@@ -23,7 +37,7 @@ export default function SendEmail() {
             />
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input name='to' placeholder='To' type="text" 
+            <input name="to" placeholder='To' type="email" 
              {...register("to", {required: true})}
              />
             {errors.to && <p className='send-email__error'>This field is required</p>}
