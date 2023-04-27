@@ -34,7 +34,6 @@ export default function EmailList() {
             
             console.log(emailsArr)
             setEmails(emailsArr)
-            console.log()
         })
         
     }, [])
@@ -78,78 +77,78 @@ export default function EmailList() {
                 ))
             }
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer dsadas'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/><EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/><EmailRow
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/><EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/><EmailRow
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
             <EmailRow
-            title='twitch.tv'
-            subject="New games coming out."
-            description='Hey gamer'
-            time='10:00'/>
+            title='This is a title'
+            subject="This is a subject"
+            description='This is a message'
+            time='This is a time'/>
         </div>
       
     </div>

@@ -59,6 +59,10 @@
   margin-right: 12px;
 }
 
+.header__avatar {
+  cursor: pointer !important;
+}
+
 /* SIDEBAR */
 
 .sidebar__new-message {
@@ -296,4 +300,25 @@ box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.5);
   padding: 4px;
 }
 
+
+/* LOGIN-PAGE */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.login__container img {
+  object-fit: contain;
+  height: 200px;
+  margin-bottom: 20px;
+}
 
