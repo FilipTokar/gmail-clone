@@ -4,13 +4,13 @@ import { Button } from '@mui/material';
 import {useForm} from 'react-hook-form'
 import { useDispatch } from 'react-redux';
 import { closeSendMessage } from '../features/mailSlice';
-import  { db }  from '../features/firebase';
+import  { db } from '../features/firebase';
 import firebase from 'firebase/compat/app'
 import 'firebase/firestore'
 import { collection, addDoc } from "firebase/firestore"; 
 
 export default function SendEmail() {
-    const {register, handleSubmit, watch, formState: {errors} } = useForm()
+    const {register, handleSubmit, formState: {errors} } = useForm()
 
     const dispatch = useDispatch()
 
