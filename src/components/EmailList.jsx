@@ -87,6 +87,69 @@ export default function EmailList() {
             subject="New games coming out."
             description='Hey gamer'
             time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/><EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/><EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
+            <EmailRow
+            title='twitch.tv'
+            subject="New games coming out."
+            description='Hey gamer'
+            time='10:00'/>
         </div>
       
     </div>
