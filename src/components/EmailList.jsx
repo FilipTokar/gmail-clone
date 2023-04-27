@@ -69,6 +69,7 @@ export default function EmailList() {
                 emails.map(({id, to, subject, message, timestamp}) => (
                 <EmailRow
                 id={id}
+                key={id}
                 title={to}
                 subject={subject}
                 description={message}

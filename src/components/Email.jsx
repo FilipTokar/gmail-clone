@@ -14,9 +14,12 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { useNavigate } from 'react-router-dom';
 import LabelImportantIcon from '@mui/icons-material/LabelImportant';
+import { useSelector } from 'react-redux';
+import { selectOpenMail } from '../features/mailSlice';
 
 export default function Email() {
   const navigate = useNavigate()
+  const selectedEmail = useSelector(selectOpenMail)
 
   return (
     <div className='email'>
@@ -64,13 +67,13 @@ export default function Email() {
       </div>
       <div className="email__body">
         <div className="email__header">
-          <h2>Subject</h2>
+          <h2>{selectedEmail?.subject}</h2>
           <LabelImportantIcon/>
-          <p>Title</p>
-          <p className='email__header-time'>10:00</p>
+          <p>{selectedEmail?.title}</p>
+          <p className='email__header-time'>{selectedEmail?.time}</p>
         </div>
         <div className="email__message">
-          This is message.
+          {selectedEmail?.description}
         </div>
       </div>
     </div>
